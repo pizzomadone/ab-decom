@@ -1,0 +1,52 @@
+Summary for /Users/vito/Desktop/workgenio/AlgoBuild085.jar
+Decompiled with CFR 0.152
+
+
+a.f.l
+----------------------------
+
+a()
+  Unable to fully structure code
+
+
+a.c.b.o
+----------------------------
+
+a(a.c.b.n int )
+  Handled impossible loop by duplicating code
+d(int )
+  Handled impossible loop by duplicating code
+j()
+  Handled impossible loop by duplicating code
+f()
+  Handled impossible loop by duplicating code
+i()
+  Handled impossible loop by duplicating code
+
+
+a.c.b.q
+----------------------------
+
+f()
+  Handled impossible loop by duplicating code
+
+
+a.c.b.b
+----------------------------
+
+a(a.c.a.b int )
+  Unable to fully structure code
+
+
+b.a.a
+----------------------------
+
+a(int )
+  Unable to fully structure code
+
+
+c.a
+----------------------------
+
+e()
+  Unable to fully structure code
