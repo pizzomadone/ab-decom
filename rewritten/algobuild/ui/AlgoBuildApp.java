@@ -138,7 +138,7 @@ public class AlgoBuildApp extends JFrame {
         return button;
     }
 
-    private JPanel createPalettePanel() {
+    private Component createPalettePanel() {
         palettePanel = new JPanel();
         palettePanel.setLayout(new BoxLayout(palettePanel, BoxLayout.Y_AXIS));
         palettePanel.setBorder(BorderFactory.createTitledBorder("Blocchi"));
@@ -155,7 +155,7 @@ public class AlgoBuildApp extends JFrame {
         JScrollPane scroll = new JScrollPane(palettePanel);
         scroll.setPreferredSize(new Dimension(200, 600));
 
-        return (JPanel) scroll.getViewport().getView().getParent().getParent();
+        return scroll;
     }
 
     private JButton createBlockButton(String name, String template) {
