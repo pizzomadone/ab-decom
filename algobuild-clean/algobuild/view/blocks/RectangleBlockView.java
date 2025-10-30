@@ -10,7 +10,7 @@ import java.awt.*;
  * Equivalente a: a.j.b.a nell'originale
  *
  * Rendering:
- * - Rettangolo con bordi arrotondati
+ * - Rettangolo con angoli quadrati (come nell'originale)
  * - Testo centrato
  * - Dimensioni calcolate dal testo
  */
@@ -70,17 +70,13 @@ public class RectangleBlockView extends BaseBlockPanel {
         int x = (panelWidth - blockWidth) / 2;
         int y = f; // Offset dall'alto per la linea di connessione
 
-        // Disegna ombra (opzionale, per effetto 3D)
-        g2d.setColor(new Color(0, 0, 0, 30));
-        g2d.fillRoundRect(x + 2, y + 2, blockWidth, blockHeight, 10, 10);
-
-        // Disegna background
+        // Disegna background (angoli quadrati come nell'originale!)
         g2d.setColor(backgroundColor);
-        g2d.fillRoundRect(x, y, blockWidth, blockHeight, 10, 10);
+        g2d.fillRect(x, y, blockWidth, blockHeight);
 
         // Disegna bordo
         g2d.setColor(borderColor);
-        g2d.drawRoundRect(x, y, blockWidth, blockHeight, 10, 10);
+        g2d.drawRect(x, y, blockWidth, blockHeight);
     }
 
     @Override
